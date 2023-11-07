@@ -3,7 +3,6 @@ import os
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-import crud
 import models
 import schemas
 from database import engine, SessionLocal
