@@ -19,7 +19,7 @@ class User(UserBase): ## USER OUT
     items: list[Item] = []
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class UserCreate(UserBase): ## USER IN
     password: str
